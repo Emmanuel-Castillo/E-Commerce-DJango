@@ -123,6 +123,12 @@ STATICFILES_DIRS = [
   os.path.join(BASE_DIR, 'static')
 ]
 
+# root directory to seek images
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+
+# configure url path to find these images so they can be rendered
+MEDIA_URL = '/images/'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
